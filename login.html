@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ashish Host Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+
+  <div class="bg-gray-800 p-8 rounded-xl shadow-xl w-full max-w-sm">
+    <h2 class="text-3xl font-bold mb-6 text-center text-blue-400">Ashish Host Login</h2>
+    <form onsubmit="return loginUser(event)">
+      <input type="text" id="username" placeholder="Username" required class="w-full mb-4 p-2 rounded bg-gray-700 border border-gray-600">
+      <input type="password" id="password" placeholder="Password" required class="w-full mb-4 p-2 rounded bg-gray-700 border border-gray-600">
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded">Login</button>
+    </form>
+    <p id="login-msg" class="text-red-400 mt-4 text-sm text-center"></p>
+  </div>
+
+  <script>
+    function loginUser(event) {
+      event.preventDefault();
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+
+      // Dummy credentials
+      if (user === "ashu" && pass === "1234") {
+        window.location.href = "index.html"; // Redirect to homepage
+      } else {
+        document.getElementById('login-msg').innerText = "Invalid username or password.";
+      }
+    }
+  </script>
+
+</body>
+</html>

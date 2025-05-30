@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AshuHost - Premium Minecraft & Web Hosting</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-900 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-blue-400">Ashu<span class="text-white">Host</span></h1>
+      <nav class="space-x-6 text-gray-300">
+        <a href="#plans" class="hover:text-white">Plans</a>
+        <a href="#features" class="hover:text-white">Features</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-br from-blue-900 to-black">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Blazing Fast Hosting For <span class="text-blue-400">Everyone</span></h1>
+    <p class="text-xl text-gray-300 max-w-xl mb-8">Minecraft, Web Hosting, Domains, SSL, Email – we provide it all under one powerful platform.</p>
+    <a href="#plans" class="bg-blue-600 px-6 py-3 text-lg font-semibold rounded-full hover:bg-blue-700 transition">Explore Plans</a>
+  </section>
+
+  <!-- Hosting Plans -->
+  <section id="plans" class="py-24 bg-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Hosting Plans</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Plan Card -->
+        <div class="glass p-8 rounded-2xl text-center shadow-lg border border-blue-800">
+          <h3 class="text-2xl font-semibold text-blue-400 mb-4">Starter</h3>
+          <p class="text-4xl font-bold mb-4">$0<span class="text-lg text-gray-400"> /month</span></p>
+          <ul class="text-gray-300 space-y-2 mb-6">
+            <li>1 GB SSD</li>
+            <li>1 vCPU Core</li>
+            <li>Free SSL & Backup</li>
+            <li>Support via Discord</li>
+          </ul>
+          <a href="#" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Get Started</a>
+        </div>
+
+        <!-- Plan Card -->
+        <div class="glass p-8 rounded-2xl text-center shadow-lg border border-purple-700">
+          <h3 class="text-2xl font-semibold text-purple-400 mb-4">Pro Gamer</h3>
+          <p class="text-4xl font-bold mb-4">$4.99<span class="text-lg text-gray-400"> /month</span></p>
+          <ul class="text-gray-300 space-y-2 mb-6">
+            <li>4 GB RAM</li>
+            <li>2 vCPU Cores</li>
+            <li>Mod & Plugin Support</li>
+            <li>Full FTP Access</li>
+          </ul>
+          <a href="#" class="bg-purple-600 px-4 py-2 rounded hover:bg-purple-700">Order Now</a>
+        </div>
+
+        <!-- Plan Card -->
+        <div class="glass p-8 rounded-2xl text-center shadow-lg border border-green-700">
+          <h3 class="text-2xl font-semibold text-green-400 mb-4">Enterprise</h3>
+          <p class="text-4xl font-bold mb-4">$12.99<span class="text-lg text-gray-400"> /month</span></p>
+          <ul class="text-gray-300 space-y-2 mb-6">
+            <li>Unlimited SSD</li>
+            <li>4+ vCPU Cores</li>
+            <li>Priority Support</li>
+            <li>DDoS Protection</li>
+          </ul>
+          <a href="#" class="bg-green-600 px-4 py-2 rounded hover:bg-green-700">Upgrade</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Why Choose AshuHost?</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-gray-300">
+        <div>
+          <h3 class="text-xl text-blue-400 mb-2">99.99% Uptime</h3>
+          <p>Our servers stay online 24/7, so your world never stops.</p>
+        </div>
+        <div>
+          <h3 class="text-xl text-purple-400 mb-2">SSD + LiteSpeed</h3>
+          <p>Experience lightning fast load speeds with premium hardware.</p>
+        </div>
+        <div>
+          <h3 class="text-xl text-green-400 mb-2">One Click Setup</h3>
+          <p>Start your Minecraft or Website hosting in just one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-800 text-center">
+    <h2 class="text-3xl font-bold mb-6">Let's Get You Online</h2>
+    <p class="mb-8 text-gray-300">Have questions or custom needs? Contact us on Discord or submit the form below.</p>
+    <a href="https://discord.gg/YOUR_SERVER" target="_blank" class="bg-blue-600 px-6 py-3 rounded-full text-white hover:bg-blue-700">Join Discord</a>
+    <br><br>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-xl mx-auto text-left space-y-4">
+      <input type="text" name="name" required placeholder="Your Name" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600">
+      <input type="email" name="_replyto" required placeholder="Your Email" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600">
+      <textarea name="message" required placeholder="Your Message" class="w-full px-4 py-2 rounded bg-gray-700 text-white border border-gray-600"></textarea>
+      <button type="submit" class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-500 py-6 text-center">
+    &copy; 2025 AshuHost. Made with ❤️ by Ashu.
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('section', { delay: 200, distance: '50px', origin: 'bottom' });
+  </script>
+</body>
+</html>
